@@ -2,26 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html{
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.grids1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
   }
-}
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3 { grid-area: 2 / 1 / 3 / 3; }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@media (max-width: 1023px) {
+  .navbar-container input:checked~header nav {
+      height: 100vh;
+      background: #31250E;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .navbar-container input:checked~header label>div:nth-child(1) {
+      transform: rotate(45deg);
+      top: 50%;
+  }
+
+  .navbar-container input:checked~header label>div:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 50%;
+  }
+
+  .navbar-container input:checked~header label>div:nth-child(2) {
+      transform: scale(0);
+      opacity: 0;
   }
 }
