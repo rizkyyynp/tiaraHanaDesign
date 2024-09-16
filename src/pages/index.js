@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero/Hero";
 import Footer from "@/components/Navigation/Footer";
 import Navbar from "@/components/Navigation/Navbar";
+import ParallaxMoving from "@/components/ParallaxText/ParallaxMoving";
 import SectionFive from "@/components/SectionFive/SectionFive";
 import SectionFour from "@/components/SectionFour/SectionFour";
 import SectionSix from "@/components/SectionSix/SectionSix";
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <SectionTwo />
         <SectionThree />
+        <ParallaxMoving />
         <SectionFour />
         <SectionFive />
         <SectionSix />
