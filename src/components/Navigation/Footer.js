@@ -5,10 +5,16 @@ import sundancer from "../../assets/sundancer.png";
 import outStanding from "../../assets/outstanding.png";
 import bestLifestyle from "../../assets/bestLifestyle.png";
 import risingCom from "../../assets/risingCom.png";
+import footerBg from "../../assets/footerBg.jpg";
 
 export default function Footer() {
     return (
-        <footer className="bg-gradient-to-b from-black to-blue-900 text-white px-6 py-10 lg:px-8">
+        <footer
+            className="bg-cover bg-center text-white px-6 py-10 lg:px-8"
+            style={{
+                backgroundImage: `url(${footerBg.src})`, // Menggunakan gambar sebagai background
+            }}
+        >
                 <div className="grid md:grid-cols-3 gap-20">
                     {/* Logo Section */}
                     <div className="flex flex-col items-center md:items-start">
