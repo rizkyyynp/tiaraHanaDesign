@@ -2,10 +2,10 @@ import Image from "next/image";
 import logoTHI from "../../assets/logoTHI.jpg";
 import khastana from "../../assets/khastana.png";
 import sundancer from "../../assets/sundancer.png";
-import outStanding from "../../assets/outstanding.png";
+import outStanding from "../../assets/outStanding.png";
 import bestLifestyle from "../../assets/bestLifestyle.png";
 import risingCom from "../../assets/risingCom.png";
-import footerBg from "../../assets/footerBg.jpg";
+import footerBg from "../../assets/footerBG.jpg";
 
 export default function Footer() {
     return (
